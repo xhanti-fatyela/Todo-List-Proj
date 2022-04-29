@@ -1,0 +1,34 @@
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 10px;
+}
+
+body {
+    background: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.titleKeeper {
+    margin: 100px;
+    padding: 100px;
+}
+
+
+/* h1 {
+    margin: 100px;
+    padding: 100px;
+    font-family: 'Oleo Script', cursive, 'Bangers', 'Roboto', sans-serif;
+    font-size: 70px !important;
+} */
