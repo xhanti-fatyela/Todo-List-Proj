@@ -37,64 +37,48 @@
                 <button class="open-button" onclick="openForm()" style="color: black; border-color: black; border-radius: 7%; margin: 5px;">Sign In</button>
 
                 <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
+                    <div class="form-container">
                         <h1 style="text-align:center;">Sign In</h1>
 
                         <i class="uil uil-envelope icon"></i>
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <input type="text" placeholder="Enter Email" name="email" class="email" required>
 
                         <i class="uil uil-lock icon"></i>
                         <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <input type="password" placeholder="Enter Password" name="psw" class="password" required>
 
                         <button type="submit" class="btn">Sign In</button>
                         <button type="button" class="btn cancel" onclick="closeFormlogin()">Close</button>
-                    </form>
+                    </div>
                 </div>
 
-                <script>
-                    function openForm() {
-                        document.getElementById("myForm").style.display = "block";
-                    }
 
-                    function closeFormlogin() {
-                        document.getElementById("myForm").style.display = "none";
-                    }
-                </script>
                 <!----------------Registration form-------------------->
                 <button class="open-button" onclick="openRgister()" style="color: black; border-color: black; border-radius: 7%;">Sign Up</button>
 
                 <div class="form-popup" id="myFormRegister">
-                    <form action="/action_page.php" class="form-container">
+                    <div class="form-container">
                         <h1 style="text-align:center;">Sign Up</h1>
 
                         <label for="Firstname"><b>Full name</b></label>
-                        <input type="text" placeholder="Firstname" name="Firstname" required>
+                        <input type="text" placeholder="Firstname" name="Firstname" id="fname" required>
 
 
                         <i class="uil uil-envelope icon"></i>
                         <label for="email"><b>e-mail</b></label>
-                        <input type="text" placeholder="e-mail" name="e-mail" required>
+                        <input type="email" placeholder="e-mail" name="e-mail" id="email" required>
 
                         <i class="uil uil-lock icon"></i>
                         <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <input type="password" placeholder="Enter Password" name="psw" id="password" required>
 
 
-                        <button type="submit" class="btn">Sign Up</button>
+                        <button type="submit" class="btn" onclick="register()">Sign Up</button>
                         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
+                    </div>
                 </div>
-                <script>
-                    function openRgister() {
-                        document.getElementById("myFormRegister").style.display = "block";
-                    }
 
-                    function closeForm() {
-                        document.getElementById("myFormRegister").style.display = "none";
-                    }
-                </script>
 
             </div>
         </div>
@@ -126,6 +110,25 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeFormlogin() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openRgister() {
+            document.getElementById("myFormRegister").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myFormRegister").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
