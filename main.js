@@ -1,9 +1,9 @@
 let users = []
 
 function register() {
-    let fullname = document.getElementById("fname").value
-    let email = document.getElementById("email").value
-    let password = document.getElementById("password").value
+    let fullname = document.getElementById("fname").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
     let user = {
         email: email,
@@ -14,21 +14,42 @@ function register() {
     users.push(user)
     localStorage.setItem("users", JSON.stringify(users))
 
-    console.log(user)
+    // if (fullname == fullname && email == email && password == password){
+           
+    //     location.href = "dashboard.html"
+    // }
+
+      
 }
 
 
 function getUser() {
-    let userInfo = {
-        email: email,
-        password: password
-    }
-    let email = document.querySelector(".email").value
-    let password = document.querySelector(".password").value
-    localStorage.setItem("users", JSON.stringify(userInfo))
-    if (email == "email" && password == "password") {
+         
 
-        alert("mojo")
+         let user = JSON.parse(localStorage.getItem("users"))
+         let email = document.getElementById("signInEmail").value
+         let password = document.getElementById("signInPassword").value   
+
+         console.log(email, password)
+    let list = user.length &&
+    JSON.parse(localStorage.getItem('users')).some(data => data.email == email && data.password == password);
+    
+    if(!list){
+        alert("Enter Correct Info or Sign Up");
     }
+    else{
+        alert("Welcome !")
+        location.href = "dashboard.html";
+    }
+    // for(let i = 0; i < user.length; i++){
+       
+    //     if (email == email && password == password) {
+            
+    //          location.href = "dashboard.html"
+             
+    //     }
+        
+    // }
+  
 
 }

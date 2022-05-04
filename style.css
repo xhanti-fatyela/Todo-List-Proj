@@ -5,10 +5,11 @@
 
 .btn {
     margin: 10px;
+    
 }
 
 body {
-    background: url("./images/background.jpg");
+    background: url("./images/office.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
