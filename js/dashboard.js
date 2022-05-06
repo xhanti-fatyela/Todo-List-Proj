@@ -108,9 +108,16 @@ function readBooks(items) {
   </div>
   `;
   });
+
 }
 
 readBooks(books);
+
+// function resetForm () {
+//     title.value = "";
+//     description.value = "";
+//     date.value = "";
+//   };
 
 // CREATE a BOOK     //This is where user inputs the details of the book they adding
 function createBook() {
@@ -121,7 +128,7 @@ function createBook() {
   try {           
     if (!title || !description || !date) //if these items are not filled 
       throw new Error("Please fill in all fields");  //this error mssg appears
-    books.push({         //After clicking "add item" this function will take the items and store them in local storage
+    books.unshift({         //After clicking "add item" this function will take the items and store them in local storage
       title,
       description,
       date,
@@ -132,6 +139,7 @@ function createBook() {
     alert(err);
     console.log(err);
   }
+//   resetForm()
 }
 // UPDATE A BOOK        //after clicking edit icon this function happens ,displaying your stored info for you to edit it
 function updateBook(position) {
@@ -152,6 +160,7 @@ function updateBook(position) {
   } catch (err) {
     alert(err);
   }
+//   resetForm()
 }
 
 // DELETE A BOOK

@@ -14,13 +14,18 @@ function register() {
     users.push(user)
     localStorage.setItem("users", JSON.stringify(users))
 
-    // if (fullname == fullname && email == email && password == password){
-           
-    //     location.href = "dashboard.html"
-    // }
-
+    if(email == password){
+    
+    }
+    else{
+        alert("Welcome You Have Successfully Registered!!")
+        
+    }
       
+
 }
+
+
 
 
 function getUser() {
@@ -28,7 +33,7 @@ function getUser() {
 
          let user = JSON.parse(localStorage.getItem("users"))
          let email = document.getElementById("signInEmail").value
-         let password = document.getElementById("signInPassword").value   
+         let password = document.getElementById("signInPassword").value  
 
          console.log(email, password)
     let list = user.length &&
@@ -53,3 +58,4 @@ function getUser() {
   
 
 }
+

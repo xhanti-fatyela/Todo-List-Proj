@@ -44,14 +44,14 @@
 
                         <i class="uil uil-envelope icon"></i>
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" id="signInEmail" required>
+                        <input type="text"  placeholder="Enter Email" id="signInEmail" required>
 
                         <i class="uil uil-lock icon"></i>
                         <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" id="signInPassword" required>
+                        <input type="password"  placeholder="Enter Password" id="signInPassword" required>
 
                         <button type="submit" class="btn" onclick="getUser()">Sign In</button>
-                        <button type="button" class="btn cancel" onclick="closeFormlogin()">Close</button>
+                        <button type="button" class="btn cancel" onclick="closeFormlogin(),location.reload();">Close</button>
                     </div>
                 </div>
 
@@ -64,20 +64,20 @@
                         <h1 style="text-align:center;">Sign Up</h1>
 
                         <label for="Firstname"><b>Full name</b></label>
-                        <input type="text" placeholder="Firstname" id="fname" required>
+                        <input type="text"  placeholder="Firstname" id="fname" required>
 
 
                         <i class="uil uil-envelope icon"></i>
                         <label for="email"><b>e-mail</b></label>
-                        <input type="text" placeholder="e-mail"  id="email" required>
+                        <input type="text"  placeholder="e-mail"  id="email" required>
 
                         <i class="uil uil-lock icon"></i>
                         <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password"  id="password" required>
+                        <input type="password"  placeholder="Enter Password"  id="password" required>
 
 
                         <button type="submit" class="btn" onclick="register()">Sign Up</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        <button type="button" class="btn cancel" onclick="closeForm(),location.reload();">Close</button>
                         
                     </div>
                 </div>
@@ -92,7 +92,7 @@
         <h1 style="font-family: sans-serif;color: white">Tido</h1>
         <h6 style="font-style: italic;color: white">Keep your mind orgarnized</h6>
     </div>
-    <div onmousemove="this.style.backgroundColor='red'">Turn Red</div>
+
     <!-------------------------->
     <!-------------Footer------------>
     <footer class="text-center text-white " style="background-color:eee;">
